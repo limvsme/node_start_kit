@@ -14,7 +14,7 @@ header span {
   color: black;
 }
 
-/********** Box들 **********/
+/********** 사이트 제목 **********/
 #title-div {
   text-align: center;
   margin: 40px auto;
@@ -27,6 +27,7 @@ header span {
   font-size: 40px;
 }
 
+/********** Box들 **********/
 #box-list {
   width: 800px;
   margin: 0 auto;
