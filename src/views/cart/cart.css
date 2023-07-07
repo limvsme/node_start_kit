@@ -328,3 +328,10 @@ td:not(.image-list) {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* 수량 조절 디자인 */
+
+.fa-sharp.fa-solid.fa-circle-minus.fa-lg,
+.fa-sharp.fa-solid.fa-circle-plus.fa-lg {
+  cursor: pointer;
+}
