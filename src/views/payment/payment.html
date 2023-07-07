@@ -2,37 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=1440, initial-scale=1">
     <title>::Is Wonderland</title>
     <!--폰트-->
     <link href="https://fonts.cdnfonts.com/css/sansita" rel="stylesheet">
     <!--Bulma-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="payment.css">
+    <script type="text/javascript" src="payment.js" defer></script>
   </head>
+
   <body>
-    <div id="container">
+    <!--상단내비-->
         <header id="master-header">
-            <nav class="upper-list">
-                <ul>
-                    <li><a href="join.css">회원가입</a></li>
-                    <li><a href="login.css">로그인</a></li>
-                    <li><a href="mypage.css">마이페이지</a></li>
-                    <li><a href="cart.css">장바구니</a></li>
-                </ul>
+                 <nav class="nav-list">
+                    <ul>
+                        <li><a href="join.css">회원가입</a></li>
+                        <li><a href="login.css">로그인</a></li>
+                        <li><a href="mypage.css">마이페이지</a></li>
+                        <li><a href="cart.css">장바구니</a></li>
+                    </ul>
              </nav>
         </header>
-            <h1><a href="index.html">Wonderland</a></h1>
+                        <h1><a href="index.html">Wonderland</a></h1>
 
-            <li class="root-list">
-                <span>장바구니</span>
-                <span>></span>
-                <span class="payment-order">주문결제</span>
-                <span>></span>
-                <span>결제완료</span>
-            </li>
-
-            <span class="upper-line"></span>
+             <ul id="root-container">
+                <li class="root-list">
+                    <span class="shopping-cart">장바구니</span>
+                    <span>></span>
+                    <span class="order-purchase">주문결제</span>
+                    <span>></span>
+                     <span class="purchaes-complete">결제완료</span>
+                </li>
+            </ul>
+            <div class="upper-line"></div>
 
 
         <div id="main-container">

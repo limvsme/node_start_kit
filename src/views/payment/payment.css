@@ -2,78 +2,78 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
     src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
   } 
+  @font-face {
+    font-family: 'Noto Sans thin';
+    font-style: normal;
+    font-weight: 300;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+  }
+  
   
   body {
-    color: #4a4a4a;
-    font-weight: 400;
-    width: 100%;
-    min-width: 1200px;
+    color: #333333;
     font-family: "Sansita","Noto Sans", sans-serif;
+    margin: 0 auto;
+    list-style-type: none;
+    min-width: 540px;
   }
   
-  
-  /* 상단 네비 메뉴 */
-  
-  #master-header {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 450px;
-  
-  }
-  
-  .upper-list ul {
-  display: flex;
-  list-style: none;
-  margin: 30px auto 0;
-  font-weight: 600;
-  text-decoration: none;
-  }
-  
-  .upper-list li {
-  margin: 20px 20px 0 0;
-  }
-  
-  /* 메인 로고 */
-  h1 {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 40px;
-  font-weight: 800;
-  font-style: italic;
-  text-decoration: none;
-  color: #a269ff;
-  }
-
-  h1 > a {
-     color: inherit;
-  }
-
-  h1 > a:hover {
+  a {
     color: inherit;
   }
-
-.root-list {
+  
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-list li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+  
+  .nav-list li:last-child {
+    margin-right: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 40px;
+    font-weight: 800;
+    color: #a269ff;
+    font-family: "Sansita", "Noto Sans KR", sans-serif;
+    font-style: italic;
+  }
+  
+  #root-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "Noto Sans thin";
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+  }
+  
+  .root-list {
     display: flex;
     align-items: baseline;
-    width: 1100px;
-    margin: 50px auto 0;
-    font-weight: bold;
-    color: grey;
-    letter-spacing: 3px;
-    font-size: 12px;
-    }
-    
-.payment-order {
-    font-size: 30px;
-    font-weight: 700;
-    color: black;
-}
+    flex-basis: 950px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .order-purchase{
+    font-size: 25px;
+    font-family: "Noto Sans";
+    font-weight: 800;
+    color: #333333;
+  }
+
 
 .upper-line {
     display: flex;
@@ -85,6 +85,13 @@
     color: white;
     font-weight: 500;
 }
+
+.order-purchase {
+    font-size: 25px;
+    font-weight: 700;
+    color: #333333;
+}
+
 
 #main-container {
     list-style-type: none;

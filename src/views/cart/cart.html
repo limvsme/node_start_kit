@@ -16,7 +16,7 @@
   <body>
     <!--상단내비-->
         <header id="master-header">
-                 <nav class="nav-list">
+            <nav class="nav-list">
                     <ul>
                         <li><a href="join.css">회원가입</a></li>
                         <li><a href="login.css">로그인</a></li>
@@ -50,35 +50,40 @@
                   </div>      
               </li>         
             </ul>
-
+                <!--빈카트-->
                 <span class="empty-cart">장바구니에 담은 상품이 없습니다.</span>
-   
-            <ul id="lower-container">
-              <li class="cart-lowerli">
-                      <span class="lower-price">상품 구매 금액</span>                    
-                      <span class="lower-emptyprice">60,000</span>
-                      <span class="lower-unit1">원</span>                       
-                      <span class="lower-plus">+</span>                    
-                      <span class="lower-delivery">배송비</span>
-                      <span class="lower-emptydelivery">50,000</span> 
-                      <span class="lower-unit2">원</span>                       
-                      <span class="lower-total">합계</span>
-                      <span class="lower-emptytotal">65,000</span>
-                      <span class="lower-unit3">원</span> 
-              </li>
-            </ul>
+                <!--상품 담길시-->
+            <div     
+
+
+            
+            <div id="lower-container">
+              <ul class="cart-lowerli">
+                      <li class="lower-price">상품 구매 금액</li>                    
+                      <li class="lower-emptyprice">60,000</li>
+                      <li class="lower-unit1">원</li>                       
+                      <li class="lower-plus">+</li>                    
+                      <li class="lower-delivery">배송비</li>
+                      <li class="lower-emptydelivery">50,000</li> 
+                      <li class="lower-unit2">원</li>                       
+                      <li class="lower-total">합계</li>
+                      <li class="lower-emptytotal">65,000</li>
+                      <li class="lower-unit3">원</li> 
+              </ul>
+            </div>
               
-            <ul id="confirm-container">
-              <li class="order-list">
-                     <span class="confirm">선택한 제품을</span>
-                     <span class="delete-item">삭제하기</span>
-                     <span class="purchase">구매하기</span>
+            <div id="confirm-container">
+              <ul class="order-list">
+                     <li class="confirm">선택한 제품을</li>
+                     <li class="delete-item">삭제하기</li>
+                     <li class="purchase">구매하기</li>
                      <div class="btn-parent">
                       <button type="submit" class="confirm-btn">전체상품 구매하기</button>
                     </div>
-              </li>
-            </ul>
-              
+              </ul>
+            </div>
+          
+          <!--페이지 버튼-->
           <div id="page-container">
             <nav class="pagination" role="navigation" aria-label="pagination">
               <a class="pagination-previous is-disabled" title="This is the first page">이전</a>
@@ -97,7 +102,8 @@
             </nav>
           </div>
 
-
+          
+          <!--임시 footer-->
             <footer id="footer-container">
               <ul class="footer-ul">
                 <li class="introduce"><a href="introduce.html">회사소개</a></li>
