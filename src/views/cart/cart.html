@@ -38,37 +38,42 @@
             </div>
 
             <div id="upper-container">
-              <ul class="cart-upperul">
-                <li>
-                  <input type="checkbox" id="select-all">
-                </li>
-                <li class="upper-rest">
-                  <span class="li-image">상품사진</span>
-                  <span class="li-name">상품명</span>
-                  <span class="li-price">판매가</span>
-                  <span class="li-quantity">수량</span>
-                  <span class="li-total">합계</span>
-                </li>
-              </ul>
-            </div>
-                <!--빈카트-->
-                <span class="empty-cart">장바구니에 담은 상품이 없습니다.</span>
-                <!--상품 담길시-->
-                <div id="main-container">
-                  <ul class="main-ul">
-                    <li class="btn-list">
+              <table class="upper-table">
+                <thead>
+                  <tr>
+
+                    <th>
+                    <input type="checkbox" id="select-all">
+                    </th>
+                    <th>상품사진</th>
+                    <th>상품명</th>
+                    <th class="hope-price">판매가</th>
+                    <th>수량</th>
+                    <th>합계</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 장바구니에 담은 상품이 없을 때 -->
+                  <tr>
+                    <td colspan="6" class="empty-cart">장바구니에 담은 상품이 없습니다.</td>
+                  </tr>
+                  <!-- 상품이 담겼을 때 -->
+                  <tr>
+
+                    <td>
                       <input type="checkbox" id="select-each">
-                    </li>
-                      <li class="image-list">
-                        <img src="../../images/cart-sample.jpg" width="80px" height="80px" alt="카트 1번">
-                      </li>
-                      
-                      <li class="item-list"><span>1차프로젝트 화이팅</span></li> 
-                      <li class="price-list"><span>50,000원</span></li>
-                      <li class="quantity-list"><span>2개</span></li>
-                      <li class="total-list"><span>100,0000원</span></li>
-                  </ul>
-                </div>
+                    </td>
+                    <td class="image-list">
+                      <img src="../../images/cart-sample.jpg" width="100px" height="100px" alt="카트 1번">
+                    </td>
+                    <td class="item-list">1차프로젝트 화이팅</td>
+                    <td class="price-list">50,000원</td>
+                    <td class="quantity-list">2개</td>
+                    <td class="total-list">100,0000원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             
             <div id="lower-container">
