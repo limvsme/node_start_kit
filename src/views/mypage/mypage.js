@@ -1,6 +1,9 @@
+import setNav from "/src/views/nav/nav.js";
+
 const accountSecurity = document.querySelector("#account-security");
 const accountOrders = document.querySelector("#account-orders");
 
+setNav();
 addAllEvents();
 
 // addEventListener들을 묶어주는 코드

@@ -13,25 +13,18 @@
       rel="stylesheet"
     />
 
-    <!-- Bulma -->
+    <!-- Bulma, CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="account-security.css" />
 
     <!-- javascript -->
-    <script defer type="text/javascript" src="account-security.js"></script>
+    <script defer type="module" src="account-security.js"></script>
+    <!-- 다음 주소찾기 API -->
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
   </head>
 
   <body>
-    <header>
-      <!-- TODO: 네비 임시 날림 구현-->
-      <div>
-        <span><a href="../register/register.html">회원가입</a></span>
-        <span><a href="../login/login.html">로그인</a></span>
-        <span><a href="../mypage/mypage.html">마이페이지</a></span>
-        <span>장바구니</span>
-      </div>
-    </header>
+    <header id="navbar"></header>
 
     <main>
       <div id="title-div">

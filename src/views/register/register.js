@@ -1,3 +1,5 @@
+import setNav from "/src/views/nav/nav.js";
+
 const registerButton = document.querySelector("#register-button");
 
 const nameInput = document.querySelector("#name-input");
@@ -6,6 +8,7 @@ const passwordInput = document.querySelector("#password-input");
 const passwordConfirmInput = document.querySelector("#password-confirm-input");
 const phoneNumberInput = document.querySelector("#phone-number-input");
 
+setNav();
 addAllEvents();
 
 // addEventListener들을 묶어주는 코드

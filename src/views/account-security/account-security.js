@@ -1,5 +1,8 @@
+import setNav from "/src/views/nav/nav.js";
+
 const findAddressButton = document.querySelector("#find-address-button");
 
+setNav();
 addAllEvents();
 
 // addEventListener들을 묶어주는 코드

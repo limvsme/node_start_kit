@@ -1,8 +1,11 @@
+import setNav from "/src/views/nav/nav.js";
+
 const idInput = document.querySelector("#id-input");
 const passwordInput = document.querySelector("#password-input");
 const loginButton = document.querySelector("#login-button");
 const nonMemberLoginButton = document.querySelector("#non-member-login-button");
 
+setNav();
 addAllEvents();
 
 // addEventListener들을 묶어주는 코드

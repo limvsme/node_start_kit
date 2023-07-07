@@ -5,9 +5,12 @@
 // 3. 주문 내역이 5건 이상이라면 하단에 그 넘어간 수만큼 페이지를 이동할 수 있는 숫자 버튼 표시
 // 4. 달력에 대한 동작도 구현해야함
 
+import setNav from "/src/views/nav/nav.js";
+
 const filterButtonList = document.querySelectorAll(".button.is-outlined");
 const orderListBody = document.querySelector("#order-list-body");
 
+setNav();
 addAllEvents();
 requestOrderData();
 
