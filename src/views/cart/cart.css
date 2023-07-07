@@ -59,7 +59,7 @@ h1 {
   color: grey;
 }
 
-.root-list {
+.root-ul {
   display: flex;
   align-items: baseline;
   flex-basis: 950px;
@@ -82,8 +82,8 @@ h1 {
   padding-bottom: 5px;
 }
 
-.cart-upperli,
-.cart-lowerli {
+.cart-upperul,
+.cart-lowerul {
   display: flex;
   width: 1200px;
   padding-top: 5px;
@@ -93,7 +93,7 @@ h1 {
   color: white;
 }
 
-.rest-li {
+.upper-rest {
   display: flex;
   flex-basis: 1000px;
   margin: 0 auto;
@@ -103,12 +103,35 @@ h1 {
 
 
 .empty-cart {
-  display: flex;
+  display: none;
   justify-content: center;
   margin: 10px auto 20px;
 }
 
-.cart-lowerli {
+
+/*장바구니 메인 */
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.main-ul {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #333333;
+}
+
+
+
+/* 카트 하단줄 */
+.cart-lowerul {
   justify-content: flex-end;
   align-items: baseline;
   letter-spacing: 1px;
@@ -161,12 +184,7 @@ h1 {
   padding-bottom: 10px;
 }
 
-@media (max-width: 650px) {
-  .order-list {
-    overflow-x: scroll;
-    justify-content: flex-start;
-  }
-}
+
 .confirm,
 .delete-item {
   margin-right: 10px;
@@ -185,7 +203,7 @@ h1 {
   cursor: pointer;
 }
 
-/* 체크박스 디자인 */
+    /* 체크박스 디자인 */
 
     input[type="checkbox"] {
         appearance: none;
@@ -227,12 +245,18 @@ h1 {
       transform: translateX(80px);
     }
 
+    #select-each {
+      border: 1px solid black;
+    }
+
     @media (max-width: 1200px) {
       #select-all {
         transform: translateX(25px); 
         margin-right: 20px;
+        transition: 0.3s ease;
       }
     }
+
 
     #page-container {
       display: flex;
@@ -242,6 +266,7 @@ h1 {
       padding-bottom: 5px;
     }
 
+/* 버튼 디자인 */
 .btn-parent {
   display: flex;
   flex-basis: 900px;
@@ -260,7 +285,13 @@ h1 {
   color: #fbfbfb;
 }
 
-/* footer */
+
+
+
+
+
+
+/* 임시 footer */
 #footer-container {
   width: 100%;
   display: flex;

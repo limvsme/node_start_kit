@@ -27,38 +27,52 @@
         </header>
                         <h1><a href="index.html">Wonderland</a></h1>
 
-            <ul id="root-container">
-              <li class="root-list">
-                <span class="shopping-cart">장바구니</span>
-                <span>></span>
-                <span>주문결제</span>
-                <span>></span>
-                <span>결제완료</span>
-              </li>
-            </ul>
+            <div id="root-container">
+              <ul class="root-ul">
+                <li class="shopping-cart">장바구니</li>
+                <li>></span>
+                <li>주문결제</li>
+                <li>></li>
+                <li>결제완료</li>
+              </ul>
+            </div>
 
-            <ul id="upper-container">    
-              <li class="cart-upperli">
-                    <input type="checkbox" id="select-all">
-                    <label for="select-all"></label>
-                  <div class="rest-li">
-                    <span class="li-image">상품사진</span>                    
-                    <span class="li-name">상품명</span>                    
-                    <span class="li-price">판매가</span>                    
-                    <span class="li-quantity">수량</span>                    
-                    <span class="li-total">합계</span>
-                  </div>      
-              </li>         
-            </ul>
+            <div id="upper-container">
+              <ul class="cart-upperul">
+                <li>
+                  <input type="checkbox" id="select-all">
+                </li>
+                <li class="upper-rest">
+                  <span class="li-image">상품사진</span>
+                  <span class="li-name">상품명</span>
+                  <span class="li-price">판매가</span>
+                  <span class="li-quantity">수량</span>
+                  <span class="li-total">합계</span>
+                </li>
+              </ul>
+            </div>
                 <!--빈카트-->
                 <span class="empty-cart">장바구니에 담은 상품이 없습니다.</span>
                 <!--상품 담길시-->
-            <div     
-
+                <div id="main-container">
+                  <ul class="main-ul">
+                    <li class="btn-list">
+                      <input type="checkbox" id="select-each">
+                    </li>
+                      <li class="image-list">
+                        <img src="../../images/cart-sample.jpg" width="80px" height="80px" alt="카트 1번">
+                      </li>
+                      
+                      <li class="item-list"><span>1차프로젝트 화이팅</span></li> 
+                      <li class="price-list"><span>50,000원</span></li>
+                      <li class="quantity-list"><span>2개</span></li>
+                      <li class="total-list"><span>100,0000원</span></li>
+                  </ul>
+                </div>
 
             
             <div id="lower-container">
-              <ul class="cart-lowerli">
+              <ul class="cart-lowerul">
                       <li class="lower-price">상품 구매 금액</li>                    
                       <li class="lower-emptyprice">60,000</li>
                       <li class="lower-unit1">원</li>                       
