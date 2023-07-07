@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+} 
+
+body {
+  color: #333333;
+  font-family: "Sansita","Noto Sans", sans-serif;
+  margin: 0 auto;
+  list-style-type: none;
+  min-width: 540px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.nav-list li:last-child {
+  margin-right: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 40px;
+  font-weight: 800;
+  color: #a269ff;
+  font-family: "Sansita", "Noto Sans KR", sans-serif;
+  font-style: italic;
+}
+
+#root-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.root-list {
+  display: flex;
+  align-items: baseline;
+  flex-basis: 950px;
+  margin-bottom: 10px;
+}
+
+
+.shopping-cart {
+  font-size: 25px;
+  color: #333333;
+}
+
+#upper-container,
+#lower-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.cart-upperli,
+.cart-lowerli {
+  display: flex;
+  width: 1200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #a269ff;
+  font-size: 16px;
+  color: white;
+}
+
+.rest-li {
+  display: flex;
+  flex-basis: 1000px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+
+
+.empty-cart {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 20px;
+}
+
+.cart-lowerli {
+  justify-content: flex-end;
+  align-items: baseline;
+  letter-spacing: 1px;
+}
+
+.lower-price,
+.lower-delivery,
+.lower-plus,
+.lower-total {
+  margin-right: 10px;
+}
+
+.lower-plus {
+  margin-left: 10px;
+}
+.lower-unit2 {
+  margin-right: 20px;
+}
+
+.lower-emptytotal {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.lower-unit3 {
+  margin-right: 20px;
+}
+
+.lower-emptytotal {
+  margin-right: 2px;
+}
+
+#confirm-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.order-list {
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-list > span {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+  .order-list {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+}
+.confirm,
+.delete-item {
+  margin-right: 10px;
+}
+.confirm {
+  margin-left: 10px;
+}
+
+.delete-item {
+  color: blue;
+  cursor: pointer;
+}
+
+.purchase {
+  color: #a269ff;
+  cursor: pointer;
+}
+
+/* 체크박스 디자인 */
+
+    input[type="checkbox"] {
+        appearance: none;
+        position: relative;
+        min-width: 1.2rem;
+        min-height: 1.2rem;
+        cursor: pointer;
+        outline: none;
+        border: 2px solid #eeeeee;
+        border-radius: 10px;
+        background: #fbfbfb;
+    }
+ 
+    input[type="checkbox"]::before {
+        content: "\2713";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        transform: scale(0) translate(-50%, -50%);
+        line-height: 1;
+        font-size: 0.8rem;
+    }
+ 
+    input[type="checkbox"]:checked {
+        background-color: #a269ff;
+        border-color: rgba(255, 255, 255, 0.3);
+        color: white;
+        font-weight: 900;
+    }
+ 
+    input[type="checkbox"]:checked::before {
+        border-radius: 10px;
+        transform: scale(1) translate(-50%, -50%)
+    }
+
+    #select-all {
+      margin: 3px 20px 4px 0;
+      transform: translateX(80px);
+    }
+
+    @media (max-width: 1200px) {
+      #select-all {
+        transform: translateX(25px); 
+        margin-right: 20px;
+      }
+    }
+
+    #page-container {
+      display: flex;
+      width: 1200px;
+      justify-content: flex-start;
+      margin: 0 auto;
+      padding-bottom: 5px;
+    }
+
+.btn-parent {
+  display: flex;
+  flex-basis: 900px;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.confirm-btn {
+  background-color: #6454E8;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 15px;
+  color: #fbfbfb;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1440, initial-scale=1">
+    <title>::Is Wonderland</title>
+    <!--폰트-->
+    <link href="https://fonts.cdnfonts.com/css/sansita" rel="stylesheet">
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="cart.css">
+    <script type="text/javascript" src="cart.js" defer></script>
+  </head>
+
+  <body>
+    <!--상단내비-->
+        <header id="master-header">
+                 <nav class="nav-list">
+                    <ul>
+                        <li><a href="join.css">회원가입</a></li>
+                        <li><a href="login.css">로그인</a></li>
+                        <li><a href="mypage.css">마이페이지</a></li>
+                        <li><a href="cart.css">장바구니</a></li>
+                    </ul>
+             </nav>
+        </header>
+                        <h1>Wonderland</h1>
+
+            <ul id="root-container">
+              <li class="root-list">
+                <span class="shopping-cart">장바구니</span>
+                <span>></span>
+                <span>주문결제</span>
+                <span>></span>
+                <span>결제완료</span>
+              </li>
+            </ul>
+
+            <ul id="upper-container">    
+              <li class="cart-upperli">
+                    <input type="checkbox" id="select-all">
+                    <label for="select-all"></label>
+                  <div class="rest-li">
+                    <span class="li-image">상품사진</span>                    
+                    <span class="li-name">상품명</span>                    
+                    <span class="li-price">판매가</span>                    
+                    <span class="li-quantity">수량</span>                    
+                    <span class="li-total">합계</span>
+                  </div>      
+              </li>         
+            </ul>
+
+                <span class="empty-cart">장바구니에 담은 상품이 없습니다.</span>
+   
+            <ul id="lower-container">
+              <li class="cart-lowerli">
+                      <span class="lower-price">상품 구매 금액</span>                    
+                      <span class="lower-emptyprice">60,000</span>
+                      <span class="lower-unit1">원</span>                       
+                      <span class="lower-plus">+</span>                    
+                      <span class="lower-delivery">배송비</span>
+                      <span class="lower-emptydelivery">50,000</span> 
+                      <span class="lower-unit2">원</span>                       
+                      <span class="lower-total">합계</span>
+                      <span class="lower-emptytotal">65,000</span>
+                      <span class="lower-unit3">원</span> 
+              </li>
+            </ul>
+              
+            <ul id="confirm-container">
+              <li class="order-list">
+                     <span class="confirm">선택한 제품을</span>
+                     <span class="delete-item">삭제하기</span>
+                     <span class="purchase">구매하기</span>
+                     <div class="btn-parent">
+                      <button type="submit" class="confirm-btn">전체상품 구매하기</button>
+                    </div>
+              </li>
+            </ul>
+              
+          <div id="page-container">
+            <nav class="pagination" role="navigation" aria-label="pagination">
+              <a class="pagination-previous is-disabled" title="This is the first page">이전</a>
+              <a class="pagination-next">다음</a>
+              <ul class="pagination-list">
+                <li>
+                  <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+                </li>
+                <li>
+                  <a class="pagination-link" aria-label="Goto page 2">2</a>
+                </li>
+                <li>
+                  <a class="pagination-link" aria-label="Goto page 3">3</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+            <footer id="footer-container">
+              <ul class="footer-ul">
+                <li class="footer-li">
+                </li>
+              </ul>
+            </footer>
+            
+                 
+  </body>
+</html>
