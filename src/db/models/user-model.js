@@ -4,6 +4,25 @@ import jwt from "jsonwebtoken";
 
 const User = model("users", UserSchema);
 
+    // 회원가입 유효성 검사 규칙 설정
+    const addUserRules = {  
+      name: 'required|string',
+      email: 'required|email|unique:users.email',
+      password: 'required|min:6|max:12',
+      phoneNumber: 'required|string',
+    };
+
+    // 회원가입 유효성 검사 함수
+    const validateAddUser = (data) => {
+      const validation = new Validator(data, addUserRules);
+
+      if(validation.fails()) {
+        const errors = validation.errors.all();
+        return errors;
+      }
+      return null;
+    };
+
 export class UserModel {
 
   async login(email, password) {
@@ -33,8 +52,15 @@ export class UserModel {
     return user;
   }
 
-  async create(userInfo) {
-    const createdNewUser = await User.create(userInfo);
+  async create(name, email, password, phoneNumber) {
+    
+    const validationError = validateAddUser({ name, email, password, phoneNumber })
+    if(validationError == null) {
+      throw new Error('유효성 검사 실패');
+    }
+
+    const createdNewUser = await User.create(name, email, password, phoneNumber);
+
     return createdNewUser;
   }
 
