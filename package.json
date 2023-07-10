@@ -1,0 +1,30 @@
+{
+  "name": "node_start_kit",
+  "version": "1.0.0",
+  "description": "node start kit",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "node"
+  ],
+  "jest": {
+    "verbose": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**"
+    ],
+    "testMatch": ["**/?(*.)+(spec|test).js?(x)"]
+  },
+  "author": "ThreeSnakes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1"
+  }
+}
