@@ -1,65 +1,33 @@
-// const model = require('mongoose');
-// const bcrypt = require('bcrypt');
-// const UserSchema = require('../db/schemas/user-schema');
+const model = require('mongoose');
+const bcrypt = require('bcrypt');
+const UserSchema = require('../db/schemas/user-schema');
 
 // const User = model('users', UserSchema);
 
-// class UserModel {
-//   async findByEmail(email) {
-//     const user = await User.findOne({ email });
-//     return user;
-//   }
+ import jwt from "jsonwebtoken";
+ import { UserModel } from "../db/models/user-model";
 
-//   async findById(userId) {
-//     const user = await User.findOne({ _id: userId });
-//     return user;
-//   }
+class UserService {
+  constructor() {
+    this.userModel = new UserModel();
+  }
 
-//   // 회원 가입
-//   async create(userInfo) {
-//     const { name, email, password, phoneNumber } = userInfo;
+  async login(email, password) {
+    const user = await this.userModel.findByEmail(email);
 
-//     // // 이메일 중복 확인  =>  Validator 함수 사용시 사용 안함
-//     // const userEmail = await this.userModel.findByEmail(email);
-//     // if (userEmail) {
-//     //   throw new Error('현재 입력한 이메일은 이미 가입되어있습니다. 다른 이메일을 입력해 주세요.');
-//     // }
+    if (!user) {
+      throw new Error("해당 이메일은 가입되어 있지 않습니다.");
+    }
 
-//     // 비밀번호 해쉬화(암호화)
-//     const hashedPassword = await bcrypt.hash(password, 10);
+    if (user.password !== password) {
+      throw new Error("비밀번호가 올바르지 않습니다.");
+    }
 
-//     // 해쉬화된 비밀번호를 삽입함
-//     const newUserInfo = {
-//       name,
-//       email,
-//       password: hashedPassword,
-//       phoneNumber,
-//     };
+    const token = jwt.sign({ userId: user._id }, "mysecretkey", { expiresIn: "1h" });
 
-//     const createdNewUser = await User.create(newUserInfo);
+    // 로그인이 성공하면 코인 발급 및 유저 정보 반환
+    return { token, user };
+  }
+}
 
-//     return createdNewUser;
-//   }
-
-//   async findAll() {
-//     const users = await User.find({});
-//     return users;
-//   }
-
-//   async update({ userId, update }) {
-//     const filter = { _id: userId };
-//     const option = { returnOriginal: false };
-
-//     const updatedUser = await User.findOneAndUpdate(filter, update, option);
-//     return updatedUser;
-//   }
-
-//   async deleteById(userId) {
-//     const result = await User.deleteOne({ _id: userId });
-//     return result;
-//   }
-// }
-
-// const userModel = new UserModel();
-
-// module.exports = { userModel };
+export default UserService;
