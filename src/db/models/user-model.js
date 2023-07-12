@@ -26,6 +26,7 @@ export class UserModel {
 
   async findByEmail(email) {
     const user = await User.findOne({ email });
+
     return user;
   }
 

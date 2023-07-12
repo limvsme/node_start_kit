@@ -26,14 +26,14 @@ class UserService {
   async addUser(userInfo) {
     const { name, email, password, phone } = userInfo;
 
-    // email 형식 정규식 (알파벳,숫자 + @ + 알파벳 숫자 + . + 알파벳 숫자)
-    let validEmail =
-      /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    // // email 형식 정규식 (알파벳,숫자 + @ + 알파벳 숫자 + . + 알파벳 숫자)
+    // let validEmail =
+    //   /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 
-    // email 형식 확인
-    if (!validEmail(email)) {
-      throw new Error("이메일 형식이 올바르지 않습니다.");
-    }
+    // // email 형식 확인
+    // if (!validEmail(email)) {
+    //   throw new Error("이메일 형식이 올바르지 않습니다.");
+    // }
 
     // email 중복 확인
     const userEmail = await this.userModel.findByEmail(email);

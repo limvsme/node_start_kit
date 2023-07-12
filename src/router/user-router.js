@@ -8,7 +8,12 @@ userRouter.post("/addUser", async (req, res, next) => {
   const { name, email, password, phone } = req.body;
   try {
     // 각 데이터를 유저 DB에 추가하기
-    const newUser = await UserService.addUser(name, email, password, phone);
+    const newUser = await new UserService().addUser({
+      name,
+      email,
+      password,
+      phone,
+    });
 
     // 회원가입 성공시 DB에 저장한 데이터를 프론트로 보냄,
     res.status(200).json({ newUser });
