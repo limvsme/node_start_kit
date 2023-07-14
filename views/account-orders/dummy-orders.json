@@ -1,0 +1,77 @@
+{
+  "dummyData": [
+    {
+      "orderId": "1005",
+      "orderDate": "2023-07-13",
+      "orderTotalPrice": "333333",
+      "orderState": "상품준비중",
+      "orderProductList": [
+        { "name": "도서1", "count": 20 },
+        { "name": "도서2", "count": 10 },
+        { "name": "도서3", "count": 30 }
+      ]
+    },
+    {
+      "orderId": "1004",
+      "orderDate": "2023-07-08",
+      "orderTotalPrice": "20000",
+      "orderState": "상품준비중",
+      "orderProductList": [
+        { "name": "도서1", "count": 2 },
+        { "name": "도서2", "count": 1 },
+        { "name": "도서3", "count": 3 }
+      ]
+    },
+    {
+      "orderId": "1003",
+      "orderDate": "2023-07-07",
+      "orderTotalPrice": "10000",
+      "orderState": "배송준비중",
+      "orderProductList": [
+        { "name": "도서4", "count": 1 },
+        { "name": "도서5", "count": 2 }
+      ]
+    },
+    {
+      "orderId": "1002",
+      "orderDate": "2023-07-06",
+      "orderTotalPrice": "13000",
+      "orderState": "배송중",
+      "orderProductList": [{ "name": "도서6", "count": 1 }]
+    },
+    {
+      "orderId": "1001",
+      "orderDate": "2023-07-06",
+      "orderTotalPrice": "7000",
+      "orderState": "주문취소",
+      "orderProductList": [{ "name": "도서7", "count": 10 }]
+    },
+    {
+      "orderId": "1000",
+      "orderDate": "2023-06-16",
+      "orderTotalPrice": "9900",
+      "orderState": "배송완료",
+      "orderProductList": [
+        { "name": "도서1", "count": 2 },
+        { "name": "도서2", "count": 1 },
+        { "name": "도서3", "count": 3 },
+        { "name": "도서4", "count": 1 },
+        { "name": "도서5", "count": 1 }
+      ]
+    },
+    {
+      "orderId": "999",
+      "orderDate": "2023-05-06",
+      "orderTotalPrice": "7500",
+      "orderState": "배송완료",
+      "orderProductList": [{ "name": "도서9", "count": 1 }]
+    },
+    {
+      "orderId": "998",
+      "orderDate": "2023-05-04",
+      "orderTotalPrice": "17500",
+      "orderState": "배송완료",
+      "orderProductList": [{ "name": "도서10", "count": 2 }]
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonderland</title>
+
+  <!--아이콘-->
+  <link href="/src/images/wonderland_logo.png" rel="icon" type="image/x-icon" />
+
+  <!--css-->
+  <link rel="stylesheet" href="./index.css">
+
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Sansita:wght@800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+
+
+  <!-- javascript -->
+  <script src="../index/index.js"></script>
+
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div id="main_contents">
+    <div class="visual-wrap bgc01">
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="" alt=""></div>
+          <div class="swiper-slide"><img src="" alt=""></div>
+          <div class="swiper-slide"><img src="" alt=""></div>
+          <div class="swiper-slide"><img src="" alt=""></div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper1", {
+          spaceBetween: 1,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            type: bullets,
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+    </div><!--//visual-wrap-->
+
+    <div class="another_wrapper">
+
+      <div class="second_bestseller">
+        <div class="inner">
+          <div class="text_area">
+            <h2 class="title1"> BEST SELLER</h2>
+            <p class="sub_title">| 원더랜드 북킷리스트, 베스트 샐러</p>
+          </div>
+          <div class="book_img">
+            <ul>
+              <li><a href="">
+                  <div class="big"><img src="" alt=""></div>
+                </a></li>
+              <li class="small"><a href="">
+                  <div class="circle_img_box"><img src="" alt=""></div>
+                </a></li>
+              <li class="small"><a href="">
+                  <div class="circle_img_box"><img src="" alt=""></div>
+                </a></li>
+            </ul>
+          </div>_
+        </div>
+      </div>
+
+      <div class="third_newbook">
+        <div class="title_box">
+          <h2>새로 나온 책</h2>
+        </div>
+        <div class="banner_wrap">
+          <div class="banner">
+            <!--slide-->
+            <div #swiperRef="" class="swiper mySwiper2">
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="" alt=""></div>
+                  <div class="swiper-slide"><img src="" alt=""></div>
+                  <div class="swiper-slide"><img src="" alt=""></div>
+                  <div class="swiper-slide"><img src="" alt=""></div>
+                  <div class="swiper-slide"><img src="" alt=""></div>
+                  <div class="swiper-slide"><img src="" alt=""></div>
+                  <div class="swiper-slide"><img src="" alt=""></div>
+                  <div class="swiper-slide"><img src="" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper(".mySwiper2", {
+                slidesPerView: 4,
+                centeredSlides: false,
+                spaceBetween: 30,
+                pagination: {
+                  el: ".swiper-pagination",
+                  type: "fraction",
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+
+              var appendNumber = 4;
+              var prependNumber = 1;
+              document
+                .querySelector(".prepend-2-slides")
+                .addEventListener("click", function (e) {
+                  e.preventDefault();
+                  swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                  ]);
+                });
+              document
+                .querySelector(".prepend-slide")
+                .addEventListener("click", function (e) {
+                  e.preventDefault();
+                  swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                  );
+                });
+              document
+                .querySelector(".append-slide")
+                .addEventListener("click", function (e) {
+                  e.preventDefault();
+                  swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                  );
+                });
+              document
+                .querySelector(".append-2-slides")
+                .addEventListener("click", function (e) {
+                  e.preventDefault();
+                  swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                  ]);
+                });
+            </script>
+          </div>
+        </div>
+      </div><!--//curation-->
+
+      <div class="fourth_content">
+        <div class="inner">
+          <div class="fourth_img_box">
+            <img src="" alt="">
+          </div>
+          <div class="fourth_img_box">
+            <img src="" alt="">
+          </div>
+          <div class="fourth_img_box">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

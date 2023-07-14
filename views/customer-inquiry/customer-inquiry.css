@@ -1,0 +1,58 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/********** 사이트 제목 **********/
+/* #title-div {
+  text-align: center;
+  margin: 40px auto;
+  color: #a269ff;
+  font-family: "Sansita", "Noto Sans KR", sans-serif;
+  font-style: italic;
+}
+
+#title-div > h1 {
+  font-size: 40px;
+} */
+
+/********** 문의 조회 **********/
+#inquiry-section {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+#page-title-div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  height: 50px;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #d8d8d8;
+  border-right-color: #d8d8d8;
+  border-radius: 3px;
+}
+
+.inquiry-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #333333;
+}
+
+em {
+  font-style: normal;
+}
+
+/********** Bulma 오버라이딩하여 커스터마이징 **********/
+.title.is-4 {
+  color: #333333;
+  display: inline;
+}
+
+.box {
+  border-color: #a269ff;
+}

@@ -1,0 +1,46 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/********** 관리자페이지용 로그아웃 버튼 **********/
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+/********** 화면 메인 **********/
+#page-title-div {
+  width: 500px;
+  margin: 0px auto 30px auto;
+}
+
+#product-add-form {
+  width: 500px;
+  margin: 10px auto;
+  padding: 40px 40px;
+  text-align: left;
+}
+
+.dropdown,
+.dropdown-trigger,
+.dropdown-menu {
+  width: 100%;
+}
+#category-dropdown-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add-button {
+  width: 100%;
+  margin: 30px 0 10px 0;
+}
+
+/********** Bulma 오버라이딩하여 커스터마이징 **********/
+.box {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3);
+  border-radius: 16px;
+}

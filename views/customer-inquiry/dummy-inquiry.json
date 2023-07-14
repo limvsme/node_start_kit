@@ -1,0 +1,14 @@
+{
+  "dummyData": [
+    {
+      "inquiryId": "00000002",
+      "inquiryTitle": "문의 테스트2",
+      "inquiryDate": "2023-07-09"
+    },
+    {
+      "inquiryId": "00000001",
+      "inquiryTitle": "문의 테스트1",
+      "inquiryDate": "2023-07-08"
+    }
+  ]
+}

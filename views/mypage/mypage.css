@@ -1,0 +1,59 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/********** 사이트 제목 **********/
+/* #title-div {
+  text-align: center;
+  margin: 50px auto;
+  color: #a269ff;
+  font-family: "Sansita", "Noto Sans KR", sans-serif;
+  font-style: italic;
+}
+
+#title-div > h1 {
+  font-size: 40px;
+} */
+
+/********** Box들 **********/
+#box-list {
+  width: 1000px;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  width: 490px;
+  height: 230px;
+  margin: 5px 5px;
+  padding: 50px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box:hover {
+  cursor: pointer;
+}
+.box-color-01 {
+  background-color: #a269ff;
+}
+.box-color-02 {
+  background-color: #6454e8;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.box-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+}
+
+.title,
+.subtitle.is-5 {
+  color: white;
+}

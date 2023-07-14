@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>상품 추가</title>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Sansita:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bulma, CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="admin-product-add.css" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/38b403d15a.js" crossorigin="anonymous"></script>
+
+    <!-- javascript -->
+    <script defer type="module" src="admin-product-add.js"></script>
+
+    <!-- 파비콘 -->
+    <link href="/src/images/wonderland_logo.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <button id="logout-button" class="button">관리자 로그아웃</button>
+    </header>
+
+    <main>
+      <div id="page-title-div">
+        <h4 class="title is-4">도서 추가</h4>
+      </div>
+
+      <form id="product-add-form" class="box">
+        <div class="field">
+          <label class="label">책제목</label>
+          <div class="control">
+            <input id="name-input" class="input" type="text" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">카테고리</label>
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button id="category-dropdown-button" class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                <span id="dropdown-text">카테고리를 선택해 주세요.</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item"> Overview </a>
+                <a href="#" class="dropdown-item"> Modifiers </a>
+                <a href="#" class="dropdown-item"> Grid </a>
+                <a href="#" class="dropdown-item"> Form </a>
+                <a href="#" class="dropdown-item"> Elements </a>
+                <a href="#" class="dropdown-item"> Components </a>
+                <a href="#" class="dropdown-item"> Layout </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">저자</label>
+          <div class="control">
+            <input id="manufacturer-input" class="input" type="text" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">가격</label>
+          <div class="control has-icons-right">
+            <input id="price-input" class="input" type="text" autocomplete="on" />
+            <span class="icon is-small is-right"> 원 </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">이미지</label>
+          <div id="image-upload" class="file has-name is-right is-fullwidth">
+            <label class="file-label">
+              <input class="file-input" type="file" name="resume" />
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label"> 업로드 </span>
+              </span>
+              <span class="file-name"> </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">설명</label>
+          <div class="control">
+            <textarea id="theme-input" class="textarea"></textarea>
+          </div>
+        </div>
+
+        <button id="add-button" class="button is-dark">추가하기</button>
+      </form>
+    </main>
+  </body>
+</html>

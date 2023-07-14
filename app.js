@@ -1,16 +1,17 @@
-const express = require('express');
-const { route } = require('./src/route');
+import { server } from "./server.js";
+import { connectDB } from "./db.js";
+import dotenv from "dotenv";
 
-const app = express();
+// .env에서 환경변수 불러오기
+dotenv.config();
 
-const PORT = 3000;
+// 포트 번호 설정
+const port = process.env.PORT;
 
-const runServer = (serverApp) => {
-  serverApp.listen(PORT, () => {
-    console.info(`app listening on port ${PORT}!`);
-  });
+// DB 실행
+connectDB();
 
-  route(serverApp);
-}
-
-runServer(app);
+// 서버 실행
+server.listen(3000, () => {
+  console.log(`app listening on port ${port}!`);
+});

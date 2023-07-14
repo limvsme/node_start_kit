@@ -1,0 +1,69 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/********** 페이지 제목 **********/
+#title-div {
+  text-align: center;
+  margin: 40px auto;
+}
+
+#title-div > h1 {
+  color: #333333;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/********** 관리자페이지용 로그아웃 버튼 **********/
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+/********** Box들 **********/
+#box-list {
+  width: 1000px;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  width: 490px;
+  height: 230px;
+  margin: 5px 5px;
+  padding: 50px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box:hover {
+  cursor: pointer;
+}
+.box-color-01 {
+  background-color: gray;
+}
+.box-color-02 {
+  background-color: #333333;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.box-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+}
+
+.box > div {
+  width: 100%;
+}
+
+.title,
+.subtitle.is-5 {
+  color: white;
+}

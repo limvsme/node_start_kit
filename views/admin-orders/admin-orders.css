@@ -1,0 +1,52 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/********** 관리자페이지용 로그아웃 버튼 **********/
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+/********** 화면 메인 **********/
+#orders-section {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+#page-title-div {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+#order-list {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/********** Bulma 오버라이딩하여 커스터마이징 **********/
+.title.is-4 {
+  color: #333333;
+}
+
+.table {
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.table thead td {
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+.table tbody td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.button.is-rounded {
+  width: 150px;
+}

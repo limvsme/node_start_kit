@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>문의내역</title>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Sansita:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bulma, CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="customer-inquiry.css" />
+
+    <!-- javascript -->
+    <script defer type="module" src="customer-inquiry.js"></script>
+
+    <!-- 파비콘 -->
+    <link href="/src/images/wonderland_logo.png" rel="icon" type="image/x-icon" />
+  </head>
+  <body>
+    <header id="navbar"></header>
+    <main>
+      <!-- <div id="title-div">
+        <h1>Wonderland</h1>
+      </div> -->
+
+      <section id="inquiry-section" class="box">
+        <div id="page-title-div">
+          <h4 class="title is-4">문의 내역</h4>
+          <button class="button is-outlined">문의하기</button>
+        </div>
+        <ul id="inquiry-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>

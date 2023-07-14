@@ -1,0 +1,76 @@
+/* default 설정 */
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+  } 
+  
+  @font-face {
+    font-family: 'Noto Sans thin';
+    font-style: normal;
+    font-weight: 300;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+  }
+
+  body {
+    background-color: #a269ff;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px auto 0;
+    width: 800px;
+  }
+  
+  h1 {
+    font-family: "Sansita", "Noto Sans KR";
+    font-size: 65px;
+    font-weight: 800;
+    font-style: italic;
+    color: whitesmoke;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .null {
+    margin-bottom: 40px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin-right: 30px;
+  }
+  
+  button {
+    width: 170px;
+    height: 45px;
+    background-color: rgb(98, 181, 197);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fbfbfb;
+    cursor: pointer;
+  }
+  
+  .home {
+    background-color: whitesmoke;
+    color: #a269ff;
+  }

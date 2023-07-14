@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1440, initial-scale=1">
+    <title>::Is Wonderland</title>
+    <!--폰트-->
+    <link href="https://fonts.cdnfonts.com/css/sansita" rel="stylesheet">
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/37ea6036f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="payment-complete.css">
+    <script type="text/javascript" src="payment-complete.js" defer></script>
+  </head>
+
+  <body>
+      <!--상단네비+로고-->
+      <nav>
+        <a class="nav-link" href="/src/views/register/register.html">회원가입</a>
+        <a class="nav-link" href="/src/views/login/login.html">로그인</a>
+        <a class="nav-link" href="/src/views/mypage/mypage.html">마이페이지</a>
+        <a class="nav-link" href="/src/views/cart/cart.html">장바구니</a>
+      </nav>
+      <div class="logo" style="display: block">
+        <h1>Wonderland</h1>
+      </div>
+
+      <!--장바구니>주문결제>결제완료 문구-->
+      <ul id="root-container">
+         <li class="root-list">
+             <span>장바구니</span>
+             <span>></span>
+             <span>주문결제</span>
+             <span>></span>
+              <span class="complete">주문완료</span>
+         </li>
+     </ul>
+            <div class="upper-line"></div>
+
+     <div id="main-container">
+          <i class="fa-solid fa-receipt fa-bounce fa-xl" style="color: #075ef2;"></i>
+       <span class="complete-message">주문이 완료되었습니다!</span>    
+        <div id="button-parent">
+          <button type="submit" class="ordercheck">주문내역 보기</button>
+          <button type="submit" class="continue-shopping">쇼핑 계속하기</button>
+       </div>  
+ 
+
+     </div>   
+          
+
+
+
+
+
+
+
+
+    </body>

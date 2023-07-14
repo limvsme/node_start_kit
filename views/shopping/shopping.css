@@ -1,0 +1,85 @@
+#wrap {
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+
+}
+.inner {
+  width: 1200px;
+}
+.shopping {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 150px 0;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 0 0 90px 0;
+  border-bottom: 1px dotted rgb(54, 54, 54);
+}
+.thumnail {
+  width: 400px;
+  height: 500px;
+  background: #4b4b4b;
+}
+
+.right {
+  width: 50%;
+}
+.title p {
+  font-size: 18px;
+  color: rgb(88, 88, 88);
+  padding: 15px 0;
+  border-bottom: 1px dotted rgb(86, 86, 86);
+}
+.intro p {
+  font-size: 36px;
+  font-weight: 600;
+}
+.intro p strong {
+  font-size: 36px;
+}
+.intro_text p {
+  padding: 40px 0 65px 0;
+  font-size: 20px;
+}
+.buttons {
+  padding: 35px 0 0 0;
+}
+.button {
+  width: 350px;
+  font-weight: 800;
+  border-radius: 60px;
+}
+.buttons .bag {
+  height: 70px;
+  background: #F35CFF;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 0;
+}
+.buttons .choice {
+  height: 70px;
+  background: #A269FF;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 0;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content_title {
+  padding: 110px 0 30px 0;
+}
+.content .img {
+  width: 1000px;
+  height: 1200px;
+  background: #4b4b4b;
+}
+

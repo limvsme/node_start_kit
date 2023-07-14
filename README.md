@@ -1,24 +1,31 @@
-# node_start_kit
-nodes start kit
+# This is an H1
+## This is an H2
+### This is an H3
+#### This is an H4
+##### This is an H5
+###### This is an H6\
 
-## How To install?
-```bash
-npm install
+_이렇게 감싸면 이텔릭체_
+**이렇게 감싸면 볼드체**
 
-# if you can use hot-reload
-npm install nodemon -g
-```
+*, +, - 를 이용해서 순서가 없는 목록을 만들 수 있습니다.
+들여쓰기를 하면 모양이 바뀝니다.
+* 머리
+  * 코
+    * 입
 
-## How To Run?
-```bash
-# run Server
-npm run start
+외부링크
+[하이퍼링크에 적힐 부분](http://www.google.com "구글")
 
-# dev Mode
-npm run start:dev
-```
+체크 리스트
+줄 앞에 - [x]를 써서 완료된 리스트 표시.
+줄 앞에 - [ ]를 써서 미완료된 리스트 표시.
 
-## How To Test?
-```bash
-npm run test
-```
+
+테이블 생성
+
+헤더1|헤더2|헤더3|헤더4
+---|---|---|---
+셀1|셀2|셀3|셀4
+셀5|셀6|셀7|셀8
+셀9|셀10|셀11|셀12

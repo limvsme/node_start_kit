@@ -1,0 +1,80 @@
+#wrap {
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.inner {
+  width: 1200px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+.title h2 {
+  font-weight: 700;
+}
+.product_list {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: column;
+}
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.book li {
+  width: 250px;
+}
+.book li a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.thumnail {
+  background-color: gray;
+  height: 300px;
+}
+.thumnail img {
+
+}
+.text_box {
+  padding: 15px 0;
+  font-size: 18px;
+}
+.text_box  a {
+  color: rgb(79, 79, 79);
+  text-align: center;
+  font-weight: 400;
+}
+.text_box  a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.text_box h3 {
+  text-align: center;
+}
+.page {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  gap: 70px 50px;
+}
+.page a {
+  color: black;
+  font-size: 18px;
+}
+
+.page a:hover {
+  color: #A269FF;
+  text-decoration: underline;
+}
+.page a:active {
+  color: #A269FF;
+  text-decoration: underline;
+}
